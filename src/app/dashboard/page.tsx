@@ -1,13 +1,8 @@
-import YoutubeEmbed from "./ui/YoutubeEmbed";
-
-
-export default function Home() {
-  return (
+export default function Dashboard() {
+  return(
     <main className="flex min-h-screen h-full w-full flex-col items-center justify-between bg-gray-700">
       <div>
-
-        <YoutubeEmbed embedId="1sX9EwlLWOc?si" />
-
+        <h1 className="text-white p-10 text-lg">Dashboard</h1>
       </div>
     </main>
   );

@@ -1,3 +1,5 @@
+# Combat Kit
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +36,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Uploading bot pictures
+
+Due to limitation in how nextjs handes blob data in the public folder images of bots must be placed in ```/public/bots/<botname.png>``` where botname is the bots name in all lower case with underscores instead of spaces
+
+ex: Break Check -> ```/public/bots/break_check.png```
+
+Once this has been done you much push to git, pull on the droplet and rebuild.
+
+The alternative is using a blob database like S3 but I dont want to pay for that rn :)
+
+Also all images should be as square as possible, and they will be resized for various applications
